@@ -95,11 +95,31 @@
                         <p class="section-why-paragraph">
                             We have run into a handful of situations where we just simply wanted to add some nice CSS transitions. Unfortunately, regular HTML seems to be deprived of this, so we aimed to remedy this problem. We created letsGo because we wanted to create a lightweight framework that features powerful HTML extensions without the weight of a full framework such as Angularjs or Vuejs.
                         </p>
+                        <div class="about-example">
+                            <div class="frow gutters">
+                                <div class="col-md-1-2">
+                                    <div class="fake-code">
+                                        &lt;div=""&gt;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;.letsGo-hide {<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; display:none;<br>
+                                        &nbsp;&nbsp;&nbsp;&nbsp;} <br>
+                                        &lt;/div&gt;
+                                    </div>
+                                </div> 
+                                <div class="col-md-1-2">
+                                    <div class="demo-box-container">
+                                        <div class="frow centered-column justify-around">
+                                            <div class="demo-animation-box card-shadow"></div>
+                                            <button type="button" name="button" onclick="letsGo('.demo-animation-box', 'toggle', '.demo-twirl');">Test</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div id="setup" class="main-section letsGo-hide">
                         <h2>Setup</h2>
                         <h4>Installation Options:</h4>
-
                         <button onclick="letsgo('#npm', 'toggle', true)" class="accordion"><h5>npm<h5></button>
                         <div id ="npm" class="panel letsGo-hide">
                           <div class="fake-code">
@@ -113,7 +133,6 @@
                               bower install letsgo
                           </div>
                         </div>
-
                         <button onclick="letsgo('#manual', 'toggle', true)" class="accordion"><h5>Manual Download<h5></button>
                             <div id ="manual" class="panel letsGo-hide">
                                 <p class="bottom-margin">Download a letsGo .zip via <a href="https://github.com/Beg-in/letsGo/releases/latest" title="letsGo Latest Release" target="_blank">GitHub</a>, then place the unzipped folder inside of your project's folder.</p>
@@ -121,18 +140,18 @@
 
                         <button onclick="letsgo('#cdn', 'toggle', true)" class="accordion" class="accordion"><h5>CDN<h5></button>
                             <div id ="cdn" class="panel letsGo-hide">
-                              <p>You will need to pick out the version of letsGo you would like to use, most likely the latest. A list of all releases is available on <a href="https://github.com/Beg-in/letsGo/releases" title="letsGo Releases" target="_blank">GitHub</a>.</p>
-                              <div class="fake-code" style="margin-bottom: 0px;">
-                                  &lt;!DOCTYPE html&gt;<br>
-                                  &lt;html&gt;<br>
-                                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
-                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;letsGo Project&lt;/title&gt;<br>
-                                  <!-- TODO: Switch to minified -->
-                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;script type="text/javascript" src="https://cdn.rawgit.com/Beg-in/letsGo/[X.Y.Z]/letsgo.js" async&gt;&lt;/script&gt;<br>
-                                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
-                                  &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
-                                  &nbsp;&nbsp;&nbsp;&nbsp;...<br>
-                                  &lt;/html&gt;<br>
+                                <p>You will need to pick out the version of letsGo you would like to use, most likely the latest. A list of all releases is available on <a href="https://github.com/Beg-in/letsGo/releases" title="letsGo Releases" target="_blank">GitHub</a>.</p>
+                                <div class="fake-code" style="margin-bottom: 0px;">
+                                    &lt;!DOCTYPE html&gt;<br>
+                                    &lt;html&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;head&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;letsGo Project&lt;/title&gt;<br>
+                                    <!-- TODO: Switch to minified -->
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;script type="text/javascript" src="https://cdn.rawgit.com/Beg-in/letsGo/[X.Y.Z]/letsgo.js" async&gt;&lt;/script&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&lt;/head&gt;<br>
+                                    &nbsp;&nbsp;&nbsp;&nbsp;...<br>
+                                    &lt;/html&gt;<br>
                               </div>
                           </div>
                         <h5>
