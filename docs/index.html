@@ -97,7 +97,7 @@
                         </p>
                         <div class="about-example">
                             <div class="frow gutters">
-                                <div class="col-md-1-2">
+                                <div class="about-example-code col-md-2-3">
                                     <div class="fake-code">
                                         &lt;div=""&gt;<br>
                                         &nbsp;&nbsp;&nbsp;&nbsp;.letsGo-hide {<br>
@@ -105,12 +105,42 @@
                                         &nbsp;&nbsp;&nbsp;&nbsp;} <br>
                                         &lt;/div&gt;
                                     </div>
+                                            <button id="hide-button" class="letsGo-hide" type="button" name="button" onclick="letsgo.remove('#hide-default-button', '.letsGo-hide');
+                                                letsgo.add('#hide-button', '.letsGo-hide');
+                                                letsgo.remove('.about-example-visual', '.col-md-2-3');
+                                                letsgo.remove('.about-example-code', '.col-md-2-3');
+                                                letsgo.add('.about-example-code', '.col-md-2-3');
+                                                letsgo.add('.about-example-visual', '.col-md-1-3');
+                                                ">Hide Demo</button>
                                 </div> 
-                                <div class="col-md-1-2">
+                                <div class="about-example-visual col-md-1-3">
                                     <div class="demo-box-container">
                                         <div class="frow centered-column justify-around">
-                                            <div class="demo-animation-box card-shadow"></div>
-                                            <button type="button" name="button" onclick="letsGo('.demo-animation-box', 'toggle', '.demo-twirl');">Test</button>
+                                            <div class="demo-box card-shadow"></div>
+                                            <button id="hide-default-button" type="button" name="button" onclick="letsgo.remove('.about-example-code', '.col-md-2-3');
+                                                letsgo.remove('.about-example-visual', '.col-md-1-3');
+                                                letsgo.add('.about-example-code', '.col-md-1-3');
+                                                letsgo.add('.about-example-visual', '.col-md-2-3');
+                                                letsgo.remove('#hide-button', '.letsGo-hide');
+                                                letsgo.add('#hide-default-button', '.letsGo-hide');
+                                                letsgo.add('#first-button');
+                                                letsgo.add('#second-button');
+                                                letsgo.add('#third-button');
+                                                letsgo.add('#fourth-button');">Demo</button>
+                                            <div class="frow gutters row-buttons">
+                                                <div class="col-md-2-8">
+                                                    <button id="first-button" class="letsGo-hide custom-button" type="button" name="button" onclick="letsgo.add('.demo-box', '.blue-background');">Spin</button>
+                                                </div>
+                                                <div class="col-md-2-8">
+                                                    <button id="second-button" class="letsGo-hide custom-button" type="button" name="button" onclick="">Hover</button>
+                                                </div>
+                                                <div class="col-md-2-8">
+                                                    <button id="third-button" class="letsGo-hide custom-button" type="button" name="button" onclick="">Zoom</button>
+                                                </div>
+                                                <div class="col-md-2-8">
+                                                    <button id="fourth-button" class="letsGo-hide custom-button" type="button" name="button" onclick="">Fly</button>
+                                                </div> 
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

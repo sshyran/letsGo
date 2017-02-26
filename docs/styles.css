@@ -101,6 +101,33 @@ button.accordion-, button.accordion:hover {
     background-color: #3a8fcc;
 }
 
+.row-buttons {
+    padding-top: 30px;
+}
+#first-button {
+    background: none;
+    border: 2px solid Goldenrod;
+    color: Goldenrod;
+}
+
+#second-button {
+    background: none;
+    border: 2px solid CornflowerBlue;
+    color: CornflowerBlue;
+}
+
+#third-button {
+    background: none;
+    border: 2px solid ForestGreen; 
+    color: ForestGreen;
+}
+
+#fourth-button {
+    background: none;
+    border: 2px solid Firebrick; 
+    color: Firebrick;
+}
+
 div.panel {
     margin:10px;
     /*background-color: #bef4c7;*/
